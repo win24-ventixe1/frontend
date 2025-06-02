@@ -1,0 +1,70 @@
+/* <> sidebar <> */
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--cool-grey-10);
+  border: none;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.logotype {
+  margin-bottom: 2.5rem;
+}
+
+.dashboard-link {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.img-dashboard {
+  margin-right: 0.8rem;
+}
+
+.events-link {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.img-events {
+  margin-right: .6rem;
+}
+
+.bookings-link {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.img-bookings {
+  margin-right: .8rem;
+}
+
+.navlink {
+  display: flex;
+  text-decoration: none;
+  color: var(--secondary-100);
+}
+
+.navlink:hover {
+  color: var(--primary-100);
+}
+
+/* <> header <> */
+.header {
+  grid-area: header;
+  background-color: var(--grey-20) ;
+  border: none;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+}
+
+/* <> main <> */
+.main {
+  grid-area: main;
+  background-color: var(--grey-20);
+  border: none;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-left: .5rem;
+}

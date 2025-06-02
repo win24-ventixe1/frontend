@@ -1,0 +1,73 @@
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey-10);
+  border-radius: 16px;
+  height: auto;
+  width: 12rem;
+  padding: .5rem;
+  margin-top: .8rem;
+}
+
+.pic-box {
+  position: relative;
+  background-color: var(--grey-40);
+  height: 9rem;
+  width: 11rem;
+  margin-bottom: .2rem;
+  border-radius: 14px;
+}
+
+.fluid-description {
+  position: absolute;
+  bottom: .5rem;
+  left: 35%;
+  transform: translateX(-50%);
+  background-color: var(--grey-10);
+  height: 1.2rem;
+  width: 7rem;
+  padding: .1rem;
+  border-radius: 20px;
+}
+
+.fluid-description-text {
+  font-size: 10px;
+  color: var(--secondary-100);
+  margin: 0;
+  padding: .2rem;
+}
+
+.event-header {
+  margin-bottom: .1rem;
+}
+
+.event-text {
+  font-size: 10px;
+  color: var(--grey-70);
+  margin-bottom: .2rem;
+}
+
+.event-btn {
+  background-color: var(--primary-40);
+  color: var(--primary-100);
+  min-height: 1rem;
+  border: 1px solid var(--primary-50);
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.event-btn:hover {
+  background-color: var(--primary-90);
+  color: var(--primary-50);
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.event-btn:disabled {
+  background-color: var(--grey-30);
+  color: var(--grey-70);
+  cursor: not-allowed;
+  box-shadow: none;
+  border: 1px solid var(--grey-40);
+}
