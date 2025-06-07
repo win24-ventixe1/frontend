@@ -1,30 +1,65 @@
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
 .event-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--grey-10);
   border-radius: 16px;
   height: auto;
-  width: 12rem;
+  width: 100%;
+  max-width: 14rem;
   padding: .5rem;
   margin-top: .8rem;
 }
 
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
 .pic-box {
-  position: relative;
+  
   background-color: var(--grey-40);
   height: 9rem;
-  width: 11rem;
+  width: 100%;
   margin-bottom: .2rem;
   border-radius: 14px;
 }
 
+.event-hover-description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 8px;
+  color: var(--grey-80);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  padding: .5rem;
+}
+
+.event-card:hover .event-hover-description {
+  opacity: 1;
+  max-height: 200px;
+}
+
 .fluid-description {
   position: absolute;
-  bottom: .5rem;
+  bottom: 7rem;
   left: 35%;
   transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--grey-10);
-  height: 1.2rem;
+  height: 1.5rem;
   width: 7rem;
   padding: .1rem;
   border-radius: 20px;
@@ -47,6 +82,31 @@
   margin-bottom: .2rem;
 }
 
+.event-price {
+  font-size: 12px;
+  margin-bottom: .4rem;
+  color: var(--primary-90);
+}
+
+.seats-input {
+  position: absolute;
+  left: 10.2rem;
+  bottom: 2.2rem;
+  font-size: 22px;
+  height: 2.4rem;
+  width: 2.8rem;
+  padding-left: .1rem;
+  border: 2px solid var(--primary-40);
+  border-radius: 4px;
+  color: var(--secondary-100);
+}
+
+.seats-input:focus {
+  border-color: var(--primary-90);
+  outline: none;
+  background-color: var(--grey-20);
+}
+
 .event-btn {
   background-color: var(--primary-40);
   color: var(--primary-100);
@@ -58,6 +118,7 @@
 
 .event-btn:hover {
   background-color: var(--primary-90);
+  border: none;
   color: var(--primary-50);
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);

@@ -5,6 +5,10 @@ const BookingLogic = createContext()
 export const BookingProvider = ({ children }) => {
   const [bookedEvents, setBookedEvents] = useState([])
 
+  const isEventBooked = (eventId) => {
+    return bookedEvents.some(e => e.id === eventId)
+  }
+
   const bookEvent = (event) => {
     if (!bookedEvents.some(e => e.id === event.id)) {
       setBookedEvents([...bookedEvents, event])
@@ -17,7 +21,7 @@ export const BookingProvider = ({ children }) => {
   }
 
   return (
-    <BookingLogic.Provider value={{ bookedEvents, bookEvent, cancelBooking }}>
+    <BookingLogic.Provider value={{ bookedEvents, bookEvent, cancelBooking, isEventBooked }}>
       {children}
     </BookingLogic.Provider>
   )

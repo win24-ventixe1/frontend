@@ -1,12 +1,15 @@
 import Layout from '../components/Layout'
 
-const Dashboard = () => {
+const Dashboard = ({ blurred, openDeveloper }) => {
   return (
-    <Layout title="Dashboard" active="Dashboard">
-      {/* Spec. dashboard innehåll*/}
-      <h2>Dashboard</h2>
-      {/* … */}
-    </Layout>
+    <div className={blurred ? 'dashboard blurred' : 'dashboard'}>
+      <Layout title="Dashboard" active="Dashboard">
+        <h2>Dashboard</h2>
+        <button onClick={openDeveloper} className="developer-btn">
+          For Developer
+        </button>
+      </Layout>
+    </div>
   )
 }
 

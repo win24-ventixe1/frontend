@@ -1,0 +1,40 @@
+.confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-box {
+  background-color: var(--grey-10);
+  border: 2px solid var(--primary-100);
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  max-width: 400px;
+  width: 90%;
+}
+
+.x-btn {
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-100);
+  border: 1px solid var(--primary-100);
+  border-radius: 4px;
+  }
