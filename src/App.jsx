@@ -34,7 +34,7 @@ function App() {
     setIsAuthenticated(true)
     setShowLogin(false)
     setShowDeveloperModal(true)
-  }
+  } // bf
 
   return (
     <>
