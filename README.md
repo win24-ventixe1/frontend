@@ -1,12 +1,11 @@
-# React + Vite
+# Ventixe Frontend – React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är frontend-delen av mitt Ventixe-projekt. Applikationen är byggd med React och Vite.
 
-Currently, two official plugins are available:
+## 🌐 Publicerad MVP-länk
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Länk till publicerad frontend via Azure Static Web Apps:
 
-## Expanding the ESLint configuration
+🔗 [https://mango-mushroom-0e9529103.6.azurestaticapps.net](https://mango-mushroom-0e9529103.6.azurestaticapps.net)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Obs! GitHub Actions visar ett fel i workflow, och är inte nåbar via länken ovan. Jag har försökt lösa detta men ej lyckats. Laddar upp länken ändå och lämnar in inlämningsuppgiften.
