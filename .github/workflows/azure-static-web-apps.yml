@@ -34,5 +34,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_MANGO_MUSHROOM_0E9529103 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"             # Där din frontend ligger
-          output_location: "dist"       # Vite bygger till dist som standard
+          app_location: "/"           # Där din frontend ligger (root)
+          api_location: ""            # Du har ingen API här, så lämnas tomt
+          output_location: "dist"     # Där Vite bygger till
