@@ -5,7 +5,7 @@ const DeveloperContext = createContext()
 export const DeveloperProvider = ({ children }) => {
   const [customEvents, setCustomEvents] = useState([])
 
-  // 🔁 Ladda från localStorage när appen startar
+  // Laddar från localStorage när appen startar.
   useEffect(() => {
     const stored = localStorage.getItem('customEvents')
     if (stored) {
@@ -13,7 +13,7 @@ export const DeveloperProvider = ({ children }) => {
     }
   }, [])
 
-  // 💾 Spara till localStorage när customEvents ändras
+  // Sparar till localStorage när customEvents ändras.
   useEffect(() => {
     localStorage.setItem('customEvents', JSON.stringify(customEvents))
   }, [customEvents])

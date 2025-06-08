@@ -12,7 +12,7 @@ const DeveloperModal = ({ onClose }) => {
 
   const handleSubmit = () => {
     const newEvent = {
-      id: Date.now(), // eller generera UUID
+      id: Date.now(),
       title,
       date,
       location,

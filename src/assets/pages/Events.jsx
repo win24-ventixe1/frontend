@@ -1,4 +1,3 @@
-// src/assets/pages/Events.jsx
 import { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
 import EventCard from '../components/EventCard'

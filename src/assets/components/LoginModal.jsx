@@ -34,7 +34,7 @@ const LoginModal = ({ onLogin }) => {
     }
 
     const data = await res.json()
-    localStorage.setItem('token', data.token) // backend måste returnera JWT/token
+    localStorage.setItem('token', data.token)
     onLogin()
   } catch (err) {
     setError('Something went wrong. Please try again.')
